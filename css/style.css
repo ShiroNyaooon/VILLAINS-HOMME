@@ -1,0 +1,869 @@
+/***********************************************************
+	ブロック
+************************************************************/
+body {
+	width: 100%;
+	color:#242424;
+	/*background-color: #FFFAFA;*/
+	background-color: #c0f0f8;
+}
+
+header {
+	width: 100%;
+	background-color: #2a2a2a;
+	color: white
+	margin: 0px auto;
+	height: 40px;
+	position: fixed;
+	top: 0px;
+	z-index: 200;
+	text-align:center;
+}
+
+@media (max-width: 460px) {
+	header {
+		text-align:left;
+	}
+}
+
+main {
+	background-color: white;
+	width: 100%;
+	z-index: 100;
+	margin: 0px auto;
+	padding: 40px 0px 16px;
+}
+
+nav {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 400;
+	background-color: #2a2a2a;
+	width: 240px;
+	height: 100%;
+	opacity: 0.9;
+	color: white;
+	padding: 20px;
+
+}
+
+#lock {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	z-index: 300;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+}
+
+footer {
+	width: 100%;
+	color: white;
+	background-color: #2a2a2a;
+	text-align: center;
+	padding-top: 20px;
+	height: 100px;
+}
+
+footer > ul > li {
+	display: inline-block;
+	margin: 16px 8px 16px 8px;
+	font-size: 0.8em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.copyright {
+	color: white;
+	font-size: 0.9em;
+	line-height: 120%;
+}
+
+
+/***********************************************************
+	セクション
+************************************************************/
+section {
+	width:100%;
+}
+
+hr {
+	margin: 8px 0px;
+}
+
+/***********************************************************
+	見出しタグ
+************************************************************/
+#title {
+	width: min(75%, 300px);
+}
+
+H1 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 3.0em;
+	font-weight: bold;
+	color: white;
+	line-height: 120%;
+
+}
+
+#h1sub {
+	margin-top: 30px;
+	font-size: 0.8em;
+	color: white;
+	line-height: 160%;
+}
+
+
+#siteNm {
+	margin-left: 15px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+
+H2 {
+	font-size: 0.9em;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: -4px;
+	text-align: center;
+	background-image: url(../img/villainsNumberBg.png);
+	overflow: hidden;
+}
+
+H3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+
+
+
+/***********************************************************
+	リンクタグ
+************************************************************/
+a {
+	color: white;
+}
+
+/***********************************************************
+	ロゴ
+************************************************************/
+#imgLogo {
+	width: 80px;
+	height: auto;
+}
+
+
+
+
+/***********************************************************
+	メインビジュアル
+************************************************************/
+#mainvisual {
+	position: relative;/*相対配置*/
+	width: 100%;
+	height: 512px;
+	overflow: hidden;	
+	margin: auto auto;
+}
+
+#mainvisual > div {
+	position: absolute;/*絶対配置*/
+	top: 16px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	#mainvisual > div > div {
+		width: 1024px;
+		margin: auto;
+	}
+}
+
+.mainvisualBox{
+	margin:2em auto;
+	position: relative;
+	padding: 0.5em 1.5em;
+	border-top: solid 2px white;
+	border-bottom: solid 2px white;
+	width: 80%;
+}
+.mainvisualBox:before, .mainvisualBox:after{
+	content: '';
+	position: absolute;
+	top: -10px;
+	width: 2px;
+	height: -webkit-calc(100% + 20px);
+	height: calc(100% + 20px);
+	background-color: white;
+}
+.mainvisualBox:before {left: 10px;}
+.mainvisualBox:after {right: 10px;}
+.mainvisualBox p {
+	margin: 0; 
+	padding: 0;
+	color: white;
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 170%;
+}
+
+span {
+	font-size: 1.5em;
+	color: rgb(80, 238, 88);
+}
+
+/***********************************************************
+	フッタービジュアル
+************************************************************/
+#footervisual {
+	position: relative;/*相対配置*/
+	width: 100%;
+	height: 256px;
+	overflow: hidden;	
+	margin: auto auto;
+}
+
+#footervisual > div {
+	position: absolute;/*絶対配置*/
+	top: 56px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+/***********************************************************
+	アマゾンリンク
+************************************************************/
+#amazonLink {
+	text-align: center;
+	width: 100%;
+	margin: 32px auto;
+}
+
+#amazonLink > img {
+	cursor: pointer;
+}
+
+#amazonLink > img:hover {
+	transform: scale(1.1);
+}
+
+.important {
+	font-size: 1.4em;
+	color: crimson;
+	font-weight: bold;
+	margin: 8px;
+}
+
+
+/***********************************************************
+	幅
+************************************************************/
+.width1 {
+	width: 100%;
+}
+
+.width2 {
+	width: 50%;
+}
+
+.width3 {
+	width: calc(100% / 3);
+}
+
+.width4 {
+	width: 25%;
+}
+
+
+/***********************************************************
+	角を丸める
+************************************************************/
+.radius {
+	border-radius: 16px;
+}
+
+.radiusRound {
+	border-radius: 5px;
+}
+
+.radiusCircle {
+	border-radius: 50%;
+}
+
+.radiusCircleEx {
+	border-radius: 9999px;
+}
+
+/***********************************************************
+	罫線
+************************************************************/
+.borderTopNone {
+	border-top-style: hidden;
+}
+
+.borderRightNone {
+	border-right-style: hidden;
+}
+
+.borderBottomNone {
+	border-bottom-style: hidden;
+}
+
+.borderBotLeftNone {
+	border-left-style: hidden;
+}
+
+
+/***********************************************************
+	余白	上 | 右 | 下 | 左
+	Example1:	margin: 10px 0px 10px 0px;
+	Example2:	margin-top: 0px; 
+	Example3:	margin-right: 0px;
+	Example4:	margin-bottom: 0px;
+	Example5:	margin-left: 0px;
+	Example6:	padding: 10px 0px 10px 0px;
+	Example7:	padding-top: 0px; 
+	Example8:	padding-right: 0px;
+	Example9:	padding-bottom: 0px;
+	Example10:	padding-left: 0px;
+************************************************************/
+.margin0 {
+	margin: 0px;
+}
+
+.padding10 {
+	padding: 10px;
+}
+
+.marginBtm10 {
+	margin-bottom: 10px;
+}
+
+.marginRight10 {
+	margin-right: 10px;
+}
+
+
+/***********************************************************
+	背景色
+	Example1:	background-color: white;
+	Example2:	background-color: #00ff00;
+	Example3:	background-color: rgb(214, 122, 127);
+	Example4:	background-color: #00ff0080; ※50%透過
+	Example5:	background-color: rgb(214, 122, 127, 0.5); ※50%透過
+************************************************************/
+/* 背景色（白）*/
+.bgColorWhite {
+	background-color: white;
+}
+
+/* 背景色（黒）*/
+.bgColorBlack {
+	background-color: black;
+}
+
+/* 背景色（薄い灰色）*/
+.bgColorEEE {
+	background-color: #eee;
+}
+
+/***********************************************************
+	読み取り専用
+************************************************************/
+input:read-only, textarea:read-only {
+	background-color: #eee;
+}
+
+
+
+/***********************************************************
+	文字色
+	Example1:	color: white;
+	Example2:	color: #00ff00;
+	Example3:	color: rgb(214, 122, 127);
+	Example4:	color: #00ff0080; ※50%透過
+	Example5:	color: rgb(214, 122, 127, 0.5); ※50%透過
+************************************************************/
+/* 文字色（白）*/
+.colorWhite {
+	color: white;
+}
+
+/* 文字色（黒）*/
+.colorBlack {
+	color: black;
+}
+
+/* 文字色（赤）*/
+.colorRed {
+	color: red;
+}
+
+.colorBule {
+	color:#005ebe;
+}
+
+
+
+
+/***********************************************************
+	文字装飾
+************************************************************/
+/* 文字に取り消し線 */
+.strikethrough {
+	text-decoration: line-through;
+}
+
+/* 文字に下線（白） */
+.UnderlineWhite {
+	display: inline-block;
+	border-bottom: solid 1px white;
+}
+
+/* 文字に下線（黒） */
+.UnderlineBlack {
+	display: inline-block;
+	border-bottom: solid 1px black;
+}
+
+/* 文字に下線（赤） */
+.UnderlineRed {
+	display: inline-block;
+	border-bottom: solid 1px red;
+}
+
+.hrBlack {
+	width: 100%;
+	display: inline-block;
+	border-bottom: solid 1px black;
+}
+
+/***********************************************************
+	ボタン装飾
+************************************************************/
+.btn100px {
+	padding: 8px 0px 8px 0px;
+	width: 100px;
+}
+
+/***********************************************************
+	水平方向の配置位置
+************************************************************/
+.alignCenter {
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+/***********************************************************
+	グループボックス
+************************************************************/
+.groupFull {
+	border: 1px solid #e6e6e6;
+	margin: 10px;
+	padding: 20px;
+}
+
+.group {
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+	margin: 10px;
+	width: 90%;
+}
+
+.group > div , textarea{
+	/* カスタム */
+	max-width: 100%;
+	width: 100%;
+	resize: vertical;
+}
+
+/***********************************************************
+	フレックスボックス
+************************************************************/
+/* 画面幅がPC:横並び、画面幅がスマホ:縦並び */
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+			flex-direction: row;
+		-ms-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+}
+
+.flexHorizontal {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+}
+
+.flexHorizontalWrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+}
+
+@media (max-width: 557px) {
+	.flexHorizontalWrap {
+		justify-content: center;
+	}
+}
+
+.flexVertical {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+}
+
+.siteOverView {
+	width:  1024px;
+	display: flex;
+	flex-flow: row-reverse;
+	margin: 10px auto 20px auto;
+}
+
+.siteOverView2 {
+	width:  1024px;
+	display: flex;
+	flex-flow: row;
+	margin: 10px auto 20px auto;
+}
+
+.itemInfo {
+	background-color: #e5f2fa;
+	width:  100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.itemFlex {
+	width:  1024px;
+	display: flex;
+	flex-flow: row;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.itemDetail1, .itemDetail2 {
+	width: 47%;
+	display: flex;
+	flex-flow: row;
+}
+
+@media (max-width: 640px) {
+	.itemDetail1, .itemDetail2 {
+		width: 100%;
+	}
+
+	.itemDetail2 {
+		margin-top: 16px;
+	}
+}
+
+.itemDetailSub {
+	width: 48%;
+	margin: auto;
+	text-align: center;
+}
+
+.letsMakeupText {
+	width: 45%;
+	margin: auto;
+	margin-top: 0px;
+	text-align: left;
+}
+
+
+
+
+.itemDetailSub > img {
+	cursor: pointer;
+	width: min(90%, 160px);
+}
+
+.legend {
+	font-size: 0.8em;
+	color: black;
+	padding-bottom: 4px;
+	font-weight: bold;
+	line-height: 120%;
+}
+
+.legendSmall {
+	font-size: 0.7em;
+	font-weight:normal;
+	line-height: 120%;
+	margin: 8px;
+}
+
+.lblLink {
+	font-size: 0.7em;
+	font-weight:normal;
+	text-align: right;
+	color: blue;
+	text-decoration: underline;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.price {
+	font-size: 1.4em;
+	color: crimson;
+	font-weight: bold;
+	margin: 8px;
+	text-align: right;
+}
+
+.priceZei {
+	font-size: 0.6em;
+	color: crimson;
+}
+
+.btnBuy {
+	margin: 4px;
+	margin-bottom: 8px;
+	padding: 16px 4px 16px 4px;
+	background-color: #005ebe;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btnBuy:hover {
+	background-color: #001e7e ;
+	transform: scale(1.05);
+}
+
+
+.imgBtnCart {
+	color: white;
+}
+
+.btnBuy > span {
+	font-size: 0.9em;
+	color: white;
+}
+
+
+.siteOverView > img, .siteOverView2 > img {
+	width: 50%;
+}
+
+@media (max-width: 1024px) {
+	.siteOverView {
+		width:  100%;
+		display: flex;
+		flex-flow: row-reverse;
+	}
+
+	.itemInfo > div {
+		width:  100%;
+		display: flex;
+		flex-flow: row;
+	}	
+}
+
+@media (max-width: 640px) {
+	.siteOverView {
+		width:  100%;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.itemInfo > div {
+		width:  100%;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.itemDetails1 {
+		text-align:center;
+		width: 100%;
+	}
+
+	.itemDetails2 {
+		text-align:center;
+		width: 100%;
+	}
+
+	.itemDetails3 {
+		text-align:center;
+		width: 100%;
+	}
+
+	.siteOverView > img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+/***********************************************************
+	フレックスボックスの位置
+************************************************************/
+.flex-left {
+	/* 左寄せ */
+	justify-content: flex-start;
+}
+
+.flex-center {
+	/* 中央寄せ */
+	justify-content: center;
+}
+
+.flex-right {
+	/* 右寄せ */
+	justify-content: flex-end;
+}
+
+.flex-between {
+	/* 先頭から順に並べ、最後のみ末尾に配置 */
+	justify-content: space-between;
+}
+
+.flex-around {
+	/* 均等に配置 */
+	justify-content: space-around;
+}
+
+/***********************************************************
+	メニュー
+************************************************************/
+#iconCart {
+	cursor: pointer;
+	position: fixed;
+	top: 4px;
+	right: 50px;
+	color: white;
+}
+
+#iconLogin {
+	cursor: pointer;
+	position: fixed;
+	top: 5px;
+	right: 10px;
+	color: white;
+}
+
+
+
+/***********************************************************
+	ワーク
+************************************************************/
+.work {
+	width: 256px;
+	height: 256px;
+	background-color: rgb(240, 240, 240);
+	margin: 8px;
+	border-radius: 8px;
+	position:relative;
+	cursor: pointer;
+	border: 1px solid;
+	overflow: hidden;
+}
+
+.work > img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	border-radius: 4px;
+}
+
+.workLink {
+	position:absolute;
+	top:0px;
+	width: 256px;
+	height: 156px;
+}
+
+.workMask {
+	position:absolute;
+	top:156px;
+	left:0px;
+	width: 256px;
+	height: 100px;
+	background-color: black;
+	border-radius: 0px 0px 4px 4px;
+	opacity: 0.7;
+	color: white;
+	cursor:default;
+}
+
+.workText {
+	margin: 10px;
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+
+/***********************************************************
+	付箋
+************************************************************/
+.heading.tag {
+    text-decoration: none;
+    padding: 0.5rem;
+    background: #f7f7f7;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
+	margin-top: 8px;
+	line-height: 120%;
+}
+
+.tag1 {
+    border-left: solid 6px #5bb1fc;
+    color: #5bb1fc;
+}
+
+.tag2 {
+    border-left: solid 6px #58ad5a;
+    color: #58ad5a;
+}
+
+.tag3 {
+    border-left: solid 6px #ff3c3c;
+    color: #ff3c3c;
+}
+
+.tag4 {
+    border-left: solid 6px #7e5bfc;
+    color: #7e5bfc;
+}
