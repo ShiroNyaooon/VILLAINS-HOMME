@@ -693,6 +693,12 @@ input:read-only, textarea:read-only {
 		flex-flow: row-reverse;
 	}
 
+	.siteOverView2 {
+		width:  100%;
+		display: flex;
+		flex-flow: row;
+	}
+
 	.itemInfo > div {
 		width:  100%;
 		display: flex;
@@ -702,6 +708,12 @@ input:read-only, textarea:read-only {
 
 @media (max-width: 640px) {
 	.siteOverView {
+		width:  100%;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+
+	.siteOverView2 {
 		width:  100%;
 		display: flex;
 		flex-flow: column nowrap;
